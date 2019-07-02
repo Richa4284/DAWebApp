@@ -38,6 +38,12 @@ namespace OwnerRegistration.Controller
             Ownerregreply.RegistrationStatus = "Successful";
             return Ok(Ownerregreply);
         }
+
+        [HttpGet("GetDemo")]
+        public IActionResult DemoGetting()
+            {
+            return null;
+            }
         [Route("Owner/")]
         [HttpPost("AddOwner")]
         public JsonResult AddOwner(Owner Ownerregd)
