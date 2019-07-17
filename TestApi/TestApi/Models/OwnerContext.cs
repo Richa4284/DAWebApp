@@ -13,7 +13,7 @@ namespace TestApi.Models
             Database.Migrate();
         }
         public DbSet<OwnerData> Owners { get; set; }
-        public DbSet<FleetData> Fleets { get; set; }
+        //public DbSet<FleetData> Fleets { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

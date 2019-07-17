@@ -29,6 +29,6 @@ namespace TestApi.Models
         [MaxLength(50)]
         public string Ownerpass { get; set; }
 
-        public ICollection<FleetData> Fleets { get; set; } = new List<FleetData>();
+       // public ICollection<FleetData> Fleets { get; set; } = new List<FleetData>();
     }
 }
