@@ -9,7 +9,7 @@ using TestApi.Models;
 namespace TestApi.Migrations
 {
     [DbContext(typeof(OwnerContext))]
-    [Migration("20190714151210_TestApi.Models.OwnerContext")]
+    [Migration("20190719063021_TestApi.Models.OwnerContext")]
     partial class TestApiModelsOwnerContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -19,29 +19,6 @@ namespace TestApi.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("TestApi.Models.FleetData", b =>
-                {
-                    b.Property<long>("FleetRCNo")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CompanyName")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.Property<string>("FleetType")
-                        .IsRequired()
-                        .HasMaxLength(20);
-
-                    b.Property<long>("OwnerId");
-
-                    b.HasKey("FleetRCNo");
-
-                    b.HasIndex("OwnerId");
-
-                    b.ToTable("Fleets");
-                });
 
             modelBuilder.Entity("TestApi.Models.OwnerData", b =>
                 {
@@ -85,14 +62,6 @@ namespace TestApi.Migrations
                             OwnerName = "malkdm",
                             Ownerpass = "cbadjwu89bs"
                         });
-                });
-
-            modelBuilder.Entity("TestApi.Models.FleetData", b =>
-                {
-                    b.HasOne("TestApi.Models.OwnerData", "Owner")
-                        .WithMany("Fleets")
-                        .HasForeignKey("OwnerId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

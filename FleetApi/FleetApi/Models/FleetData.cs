@@ -14,7 +14,7 @@ namespace FleetApi.Models
 
         [Required]
         [MaxLength(17)]
-        public long FleetRCNo { get; set; }
+        public string FleetRCNo { get; set; }
 
         [Required]
         [MaxLength(20)]
@@ -24,9 +24,10 @@ namespace FleetApi.Models
         [MaxLength(50)]
         public string CompanyName { get; set; }
 
-        [ForeignKey("OwnerId")]
+        //[ForeignKey("OwnerId")]
        // public OwnerData Owner { get; set; }
 
+        [Required]
         public long OwnerId { get; set; }
     }
 }

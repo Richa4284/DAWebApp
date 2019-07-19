@@ -13,7 +13,7 @@ namespace FleetApi.Migrations
                 {
                     FleetID = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    FleetRCNo = table.Column<long>(maxLength: 17, nullable: false),
+                    FleetRCNo = table.Column<string>(maxLength: 17, nullable: false),
                     FleetType = table.Column<string>(maxLength: 20, nullable: false),
                     CompanyName = table.Column<string>(maxLength: 50, nullable: false),
                     OwnerId = table.Column<long>(nullable: false)
@@ -26,12 +26,12 @@ namespace FleetApi.Migrations
             migrationBuilder.InsertData(
                 table: "Fleets",
                 columns: new[] { "FleetID", "CompanyName", "FleetRCNo", "FleetType", "OwnerId" },
-                values: new object[] { 1L, "ssjfksef", 43823462L, "Car", 102L });
+                values: new object[] { 1L, "ssjfksef", "skfh232fke", "Car", 101L });
 
             migrationBuilder.InsertData(
                 table: "Fleets",
                 columns: new[] { "FleetID", "CompanyName", "FleetRCNo", "FleetType", "OwnerId" },
-                values: new object[] { 2L, "sfhjhsfr", 11478545L, "Truck", 102L });
+                values: new object[] { 2L, "sfhjhsfr", "wdswnkj23546lks", "Truck", 101L });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FleetApi.Migrations
 {
     [DbContext(typeof(FleetContext))]
-    [Migration("20190716152421_FleetApi.Models.FleetContext")]
+    [Migration("20190719082726_FleetApi.Models.FleetContext")]
     partial class FleetApiModelsFleetContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,7 +30,8 @@ namespace FleetApi.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<long>("FleetRCNo")
+                    b.Property<string>("FleetRCNo")
+                        .IsRequired()
                         .HasMaxLength(17);
 
                     b.Property<string>("FleetType")
@@ -48,17 +49,17 @@ namespace FleetApi.Migrations
                         {
                             FleetID = 1L,
                             CompanyName = "ssjfksef",
-                            FleetRCNo = 43823462L,
+                            FleetRCNo = "skfh232fke",
                             FleetType = "Car",
-                            OwnerId = 102L
+                            OwnerId = 101L
                         },
                         new
                         {
                             FleetID = 2L,
                             CompanyName = "sfhjhsfr",
-                            FleetRCNo = 11478545L,
+                            FleetRCNo = "wdswnkj23546lks",
                             FleetType = "Truck",
-                            OwnerId = 102L
+                            OwnerId = 101L
                         });
                 });
 #pragma warning restore 612, 618

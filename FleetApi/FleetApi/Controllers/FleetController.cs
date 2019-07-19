@@ -7,10 +7,10 @@ namespace TestApi.Controllers
 {
     [Route("api/fleet")]
     [ApiController]
-    public class OwnerController : ControllerBase
+    public class FleetController : ControllerBase
     {
         private readonly IDataRepository<FleetData> _dataRepository;
-        public OwnerController(IDataRepository<FleetData> dataRepository)
+        public FleetController(IDataRepository<FleetData> dataRepository)
         {
             _dataRepository = dataRepository;
         }
@@ -49,8 +49,8 @@ namespace TestApi.Controllers
             _dataRepository.Add(fleet);
             return CreatedAtRoute(
                   "Get",
-                  new { Id = fleet.FleetId },
-                  owner);
+                  new { Id = fleet.FleetID },
+                  fleet);
         }
 
         // PUT: api/fleet/5

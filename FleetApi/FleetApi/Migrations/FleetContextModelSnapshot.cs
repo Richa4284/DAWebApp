@@ -28,7 +28,8 @@ namespace FleetApi.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<long>("FleetRCNo")
+                    b.Property<string>("FleetRCNo")
+                        .IsRequired()
                         .HasMaxLength(17);
 
                     b.Property<string>("FleetType")
@@ -46,17 +47,17 @@ namespace FleetApi.Migrations
                         {
                             FleetID = 1L,
                             CompanyName = "ssjfksef",
-                            FleetRCNo = 43823462L,
+                            FleetRCNo = "skfh232fke",
                             FleetType = "Car",
-                            OwnerId = 102L
+                            OwnerId = 101L
                         },
                         new
                         {
                             FleetID = 2L,
                             CompanyName = "sfhjhsfr",
-                            FleetRCNo = 11478545L,
+                            FleetRCNo = "wdswnkj23546lks",
                             FleetType = "Truck",
-                            OwnerId = 102L
+                            OwnerId = 101L
                         });
                 });
 #pragma warning restore 612, 618

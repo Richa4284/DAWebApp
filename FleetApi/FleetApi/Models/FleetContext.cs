@@ -20,18 +20,18 @@ namespace FleetApi.Models
             modelBuilder.Entity<FleetData>().HasData(new FleetData
             {
                 FleetID = 1,
-                FleetRCNo = 43823462,
+                FleetRCNo = "skfh232fke",
                 FleetType = "Car",
                 CompanyName = "ssjfksef",
-                OwnerId = 103
+                OwnerId = 101
 
             }, new FleetData
             {
                 FleetID = 2,
-                FleetRCNo = 11478545,
+                FleetRCNo = "wdswnkj23546lks",
                 FleetType = "Truck",
                 CompanyName = "sfhjhsfr",
-                OwnerId = 102
+                OwnerId = 101
             });
         }
     }
