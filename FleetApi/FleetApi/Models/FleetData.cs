@@ -14,6 +14,7 @@ namespace FleetApi.Models
 
         [Required]
         [MaxLength(17)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public string FleetRCNo { get; set; }
 
         [Required]
