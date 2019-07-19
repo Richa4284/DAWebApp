@@ -10,7 +10,10 @@ namespace LocationApi.Models
     {
         [Key]
         public int LocationID { get; set; }
-
+        
+        //for Prevent AutoIncrement
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int FleetID { get; set; }
 
         [Required]
