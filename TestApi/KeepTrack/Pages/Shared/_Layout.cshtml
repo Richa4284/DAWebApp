@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="impage/ong" href="img/title-logo.png">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="~/js/style.js"></script>
+    <title>KeepTrack</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/Map.js"></script>
+
+    <environment include="Development">
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+    </environment>
+</head>
+<body onload="initMap()">
+    <partial name="_CookieConsentPartial" />
+
+    <div >
+        @RenderBody()
+        
+    </div>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

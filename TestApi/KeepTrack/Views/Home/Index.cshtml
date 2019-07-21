@@ -1,0 +1,119 @@
+﻿@page
+@model KeepTrack.Models.Registration
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index";
+}
+<button id="user" onclick="myFunction()" class="btn-login log-page-button">
+    <img src="img/1.png" alt="img" class=" btn-icon">
+</button>
+
+<div class="sidebar">
+    <img class="main-logo" src="img/logo.png">
+
+    <button class="btn-add-agent">Add Agent <div class="fa fa-plus"></div></button>
+
+    <button class="accordion tooltip" onclick="dropdown()">Agents On Work <div class="fa fa-caret-down"></div><span class="tooltiptext">Double click</span></button>
+    <div class="panel">
+        <p><button class="agents">Nick Fury</button></p>
+        <p><button class="agents">Agent Black</button></p>
+        <p><button class="agents">Agent 007</button></p>
+        <p><button class="agents">Nick Fury</button></p>
+        <p><button class="agents">Agent Black</button></p>
+        <p><button class="agents">Agent 007</button></p>
+    </div>
+
+    <button class="accordion tooltip" onclick="dropdown()">All Agent<div class="fa fa-caret-down"></div><span class="tooltiptext">Double click</span></button>
+    <div class="panel">
+        <p>
+            <button class="agents tooltip" onclick="details()">
+                Nick Fury
+            </button>
+        </p>
+        <p>
+            <button class="agents tooltip" onclick="details()">
+                Agent Black
+            </button>
+        </p>
+        <p>
+            <button class="agents tooltip" onclick="details()">
+                Agent 007
+            </button>
+        </p>
+    </div>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCqP8UOjPDuhwMZjkK-4IxE-wIb7VNG9g"></script>
+<div id="map" class="map"></div>
+@*<script src="https://maps.google.com/maps/api/js?key=AIzaSyDCqP8UOjPDuhwMZjkK-4IxE-wIb7VNG9g"></script>*@
+
+<div id="wrapper" class="flip-card" style="display: none;">
+
+    <div id="formContainer" class="flip-card-inner">
+        <div class="flip-card-front">
+            <form class="card-content-front animate" method="post" asp-action="Login">
+                <h1 class="heading">Login Form</h1>
+
+                <div class="container">
+                    <input type="text" placeholder="Enter Username" asp-for="Email">
+                    <input type="password" placeholder="Enter Password" asp-for="password">
+                    <button type="submit" class="log-page-button">Login</button>
+                    <a id="btnreg" onclick="rotate()" class="btn-reg log-page-button">Register</a>
+                    <input id="remme" type="checkbox" style="margin:20px 10px 20px 20px;"> Remember me
+                    <a href="#" class="link">Forgot Password ?</a>
+                </div>
+
+            </form>
+        </div>
+        <div class="flip-card-back">
+            <form class="card-content-front animate" method="post">
+                <h1 class="heading">Registration Form</h1>
+
+                <div class="container">
+                    <input type="text" placeholder="Enter Company Name" asp-for="Name" id="Name">
+                    <input type="text" placeholder="Enter Email ID" asp-for="Email" id="Email">
+                    <input type="text" placeholder="Enter Email ID" asp-for="contact" id="contact">
+                    <input type="password" placeholder="Enter Password" asp-for="password" id="password">
+                    <button type="button" class="log-page-button" id="btnSubmit">submit</button><a id="register" onclick="revRotate()" class="btn-reg log-page-button">Login</a>
+
+                    <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $("#btnSubmit").click(function () {
+        debugger
+        var OwnerData = new Object();  
+                 OwnerData.OwnerName = $('#Name').val();  
+                OwnerData.OwnerEmail = $('#Email').val();  
+                 OwnerData.OwnerContact = $('#contact').val();  
+                 OwnerData.Ownerpass = $('#password').val();  
+                  
+
+                 $.ajax({  
+                     url: 'https://localhost:5001/api/owner',  
+                     type: 'POST',  
+                     contentType:"application/json",
+                     dataType: 'json',
+                     crossDomain: true,
+                     data: JSON.stringify(OwnerData),  
+                     success: function (data, textStatus, xhr) {
+                         if (data != undefined) {
+                             alert("Record added succssfully")
+                             window.location.href = "https://localhost:44304/Home/index";
+                         }
+                         else {
+                              alert("Error something wrong")
+                         }
+                         //console.log(data);  
+                     },  
+                     error: function (xhr, textStatus, errorThrown) {  
+                         console.log('Error in Operation');  
+                     }  
+                 });  
+    });
+</script>
+
