@@ -9,8 +9,8 @@ using TestApi.Models;
 namespace TestApi.Migrations
 {
     [DbContext(typeof(OwnerContext))]
-    [Migration("20190719063136_TestApi.Models.OwnerContextSeed")]
-    partial class TestApiModelsOwnerContextSeed
+    [Migration("20190721123953_TestApi.Models.OwnerContext")]
+    partial class TestApiModelsOwnerContext
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

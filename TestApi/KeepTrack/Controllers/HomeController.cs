@@ -16,6 +16,12 @@ namespace KeepTrack.Controllers
             return View(registration);
         }
 
+        public IActionResult AddAgent()
+        {
+            FleetData data = new FleetData();
+            return View(data);
+        }
+
         public IActionResult Privacy()
         {
             return View();

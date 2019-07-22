@@ -36,12 +36,13 @@ namespace TestApi
                 options.AddPolicy(MyAllowSpecificOrigins,
                 builder =>
                 {
-                    builder.WithOrigins("https://localhost:44304",
+                    builder.WithOrigins("http://localhost:6001",
                                         "https://localhost:5001")
                     .AllowAnyHeader()
                                 .AllowAnyMethod();
                 });
             });
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
         }
@@ -58,7 +59,8 @@ namespace TestApi
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseCors();
+         app.UseCors(MyAllowSpecificOrigins);
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }

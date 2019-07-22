@@ -1,0 +1,56 @@
+﻿@model  KeepTrack.Models.FleetData
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="impage/ong" href="img/title-logo.png">
+    <title>KeepTrac-Add Agent</title>
+    <link rel="stylesheet" href="~/css/Regstyle.css" />
+</head>
+<body>
+    
+    
+        <div class="row">
+            <div class="book">
+                <div class="book-form">
+                    <form action="#" class="form">
+                        <h2 class="heading-about" style="font-size:35px !important">
+                                Add Fleet
+                            </h2>
+                        
+
+                        <div class="form-group">
+                            <input type="text"  class="form-input" placeholder="Full name" id="name" required>
+                            <label for="name" style="color:black !important" class="form-label">Full name</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Email address" id="email" required>
+                            <label for="email" style="color:black !important" class="form-label">Email address</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="soflow">
+                                <!-- This method is nice because it doesn't require extra div tags, but it also doesn't retain the style across all browsers. -->
+                                <option>Fleet Type</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-green">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+
+
+</body>
+</html>

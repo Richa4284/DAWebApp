@@ -2,7 +2,6 @@ F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\TestApi.deps.json
 F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\TestApi.runtimeconfig.json
 F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\TestApi.runtimeconfig.dev.json
 F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\TestApi.dll
-F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.csprojAssemblyReference.cache
 F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.csproj.CoreCompileInputs.cache
 F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.RazorAssemblyInfo.cache
 F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.RazorAssemblyInfo.cs
@@ -12,3 +11,9 @@ F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.RazorTargetAssemblyInfo.cache
 F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\TestApi.pdb
 F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.dll
 F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.pdb
+F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.csprojAssemblyReference.cache
+F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\KeepTrack.Views.dll
+F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\KeepTrack.Views.pdb
+F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\KeepTrack.dll
+F:\TestApi\TestApi\bin\Debug\netcoreapp2.2\KeepTrack.pdb
+F:\TestApi\TestApi\obj\Debug\netcoreapp2.2\TestApi.csproj.CopyComplete

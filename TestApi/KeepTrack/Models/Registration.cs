@@ -11,12 +11,12 @@ namespace KeepTrack.Models
         [Required]
         public string Name { get; set; }
 
+        [Required]
+        public long contact { get; set; }
+
         [Required(ErrorMessage = "Required EmailID")]
         [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}", ErrorMessage = "Please enter Valid Email ID")]
         public string Email { get; set; }
-
-        [Required]
-        public Int64 contact { get; set; }
 
         [DataType(DataType.Password)]
         [Required(ErrorMessage = "Required Password")]

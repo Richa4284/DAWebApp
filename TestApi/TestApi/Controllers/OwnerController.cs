@@ -43,7 +43,8 @@ namespace TestApi.Controllers
         }
 
         // POST: api/Owner
-        [EnableCors(PolicyName = "_myAllowSpecificOrigins")]
+        
+        [EnableCors("_myAllowSpecificOrigins")]
         [HttpPost]
         public IActionResult Post([FromBody]JObject jObject)
         {
