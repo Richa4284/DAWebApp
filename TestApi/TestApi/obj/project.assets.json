@@ -4499,20 +4499,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "KeepTrack/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Cors": "5.2.7",
-          "Microsoft.AspNetCore.Server.IIS": "2.2.6"
-        },
-        "compile": {
-          "bin/placeholder/KeepTrack.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/KeepTrack.dll": {}
-        }
       }
     }
   },
@@ -12212,16 +12198,10 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "KeepTrack/1.0.0": {
-      "type": "project",
-      "path": "../KeepTrack/KeepTrack.csproj",
-      "msbuildProject": "../KeepTrack/KeepTrack.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "KeepTrack >= 1.0.0",
       "Microsoft.AspNet.WebApi.Cors >= 5.2.7",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
@@ -12243,11 +12223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\TestApi\\TestApi\\TestApi.csproj",
+      "projectUniqueName": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj",
       "projectName": "TestApi",
-      "projectPath": "F:\\TestApi\\TestApi\\TestApi.csproj",
+      "projectPath": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj",
       "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
-      "outputPath": "F:\\TestApi\\TestApi\\obj\\",
+      "outputPath": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -12267,11 +12247,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "F:\\TestApi\\KeepTrack\\KeepTrack.csproj": {
-              "projectPath": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

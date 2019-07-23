@@ -5,11 +5,11 @@
     ViewBag.Title = "Index";
 }
 <button id="user" onclick="myFunction()" class="btn-login log-page-button">
-    <img src="img/1.png" alt="img" class=" btn-icon">
+        <img src="~/img/1.png" alt="img" class="btn-icon">
 </button>
 
 <div class="sidebar">
-    <img class="main-logo" src="img/logo.png">
+    <img class="main-logo" src="~/img/title-logo.png">
     <input type="button" class="btn-add-agent" value="Add Fleet " onclick="location.href='@Url.Action("AddAgent","Home")'" />
     <button class="accordion tooltip" onclick="dropdown()">Fleets On Work <div class="fa fa-caret-down"></div><span class="tooltiptext">Double click</span></button>
     <div class="panel">

@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v2.2": {
       "TestApi/1.0.0": {
         "dependencies": {
-          "KeepTrack": "1.0.0",
           "Microsoft.AspNet.WebApi.Cors": "5.2.7",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -386,18 +385,6 @@
             "assemblyVersion": "4.1.1.0",
             "fileVersion": "4.6.26515.6"
           }
-        }
-      },
-      "KeepTrack/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.WebApi.Cors": "5.2.7",
-          "Microsoft.AspNetCore.Server.IIS": "2.2.6"
-        },
-        "runtime": {
-          "KeepTrack.dll": {}
-        },
-        "compile": {
-          "KeepTrack.dll": {}
         }
       },
       "Microsoft.AspNetCore/2.2.0": {
@@ -3608,11 +3595,6 @@
       "sha512": "sha512-S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
       "path": "system.text.encoding.codepages/4.5.0",
       "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
-    },
-    "KeepTrack/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Microsoft.AspNetCore/2.2.0": {
       "type": "package",

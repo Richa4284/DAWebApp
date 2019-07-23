@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\TestApi\\TestApi\\TestApi.csproj": {}
+    "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj": {}
   },
   "projects": {
-    "F:\\TestApi\\KeepTrack\\KeepTrack.csproj": {
+    "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj",
-        "projectName": "KeepTrack",
-        "projectPath": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj",
+        "projectUniqueName": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj",
+        "projectName": "TestApi",
+        "projectPath": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\TestApi.csproj",
         "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
-        "outputPath": "F:\\TestApi\\KeepTrack\\obj\\",
+        "outputPath": "C:\\Users\\kiran\\Desktop\\TestApi\\TestApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,83 +32,6 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.AspNet.WebApi.Cors": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.AspNetCore.Server.IIS": {
-              "target": "Package",
-              "version": "[2.2.6, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461"
-          ],
-          "assetTargetFallback": true,
-          "warn": true
-        }
-      }
-    },
-    "F:\\TestApi\\TestApi\\TestApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\TestApi\\TestApi\\TestApi.csproj",
-        "projectName": "TestApi",
-        "projectPath": "F:\\TestApi\\TestApi\\TestApi.csproj",
-        "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
-        "outputPath": "F:\\TestApi\\TestApi\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\kiran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "F:\\TestApi\\KeepTrack\\KeepTrack.csproj": {
-                "projectPath": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj"
-              }
-            }
           }
         },
         "warningProperties": {

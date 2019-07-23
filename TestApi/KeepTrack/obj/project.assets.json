@@ -12160,11 +12160,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj",
+      "projectUniqueName": "C:\\Users\\kiran\\Desktop\\TestApi\\KeepTrack\\KeepTrack.csproj",
       "projectName": "KeepTrack",
-      "projectPath": "F:\\TestApi\\KeepTrack\\KeepTrack.csproj",
+      "projectPath": "C:\\Users\\kiran\\Desktop\\TestApi\\KeepTrack\\KeepTrack.csproj",
       "packagesPath": "C:\\Users\\kiran\\.nuget\\packages\\",
-      "outputPath": "F:\\TestApi\\KeepTrack\\obj\\",
+      "outputPath": "C:\\Users\\kiran\\Desktop\\TestApi\\KeepTrack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
