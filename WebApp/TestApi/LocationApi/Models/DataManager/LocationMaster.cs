@@ -19,11 +19,11 @@ namespace LocationApi.Models.DataManager
         {
             return _LocationContext.Location.ToList();
         }
-        //public LocationData Get(long id)
-        //{
-        //    return _LocationContext.Locations
-        //          .FirstOrDefault(o => o.LocationId = id);
-        //}
+        public LocationInfo Get(long id)
+        {
+            return _LocationContext.Location
+                  .FirstOrDefault(o => o.LocationID == id);
+        }
         public void Add(LocationInfo entity)
         {
             _LocationContext.Location.Add(entity);
@@ -45,14 +45,9 @@ namespace LocationApi.Models.DataManager
             _LocationContext.SaveChanges();
         }
 
-        public LocationInfo Get(long id)
-        {
-            throw new NotImplementedException();
-        }
-
-        LocationInfo IDataRepository<LocationInfo>.Get(long id)
-        {
-            throw new NotImplementedException();
-        }
+        //LocationInfo IDataRepository<LocationInfo>.Get(long id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

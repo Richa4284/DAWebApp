@@ -10,7 +10,6 @@ namespace LocationApi.Models
     {
         [Key]
         public int LocationID { get; set; }
-
         public int FleetID { get; set; }
 
         [Required]
@@ -18,6 +17,5 @@ namespace LocationApi.Models
 
         [Required]
         public double Longitude { get; set; }
-
     }
 }

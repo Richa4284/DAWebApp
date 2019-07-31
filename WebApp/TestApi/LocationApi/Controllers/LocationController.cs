@@ -14,7 +14,6 @@ namespace LocationApi.Controllers
         {
             _dataRepository = dataRepository;
         }
-
         // GET: api/fleet
         [HttpGet]
         public IActionResult Get()
